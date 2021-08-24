@@ -1,5 +1,5 @@
 import styled from "styled-components"
-export const ViewLoginFrame = styled.div`  
+export const ViewLoginFrame = styled.div`
   width: 100vw;
   height: 100vh;
   align-items: center;
@@ -30,8 +30,7 @@ export const Logo = styled.div`
   box-shadow: 
   /* logo */ 0px 0px 2px ${props => props.theme.primary.dark},
     /* off set */ 0px 0px 0px 5px ${props => props.theme.primary.main},
-    /* bottom rigth */ 8px 8px 15px #80cbc4
-,
+    /* bottom rigth */ 8px 8px 15px #80cbc4,
     /* top left */ -8px -8px 15px ${props => props.theme.primary.light};
 `
 
@@ -90,15 +89,14 @@ export const SigninButton = styled.button`
   font-size: 20px;
   font-weight: 700;
   font-family: "Lato", sans-serif;
-  color: ${props=>props.theme.primary.light};
+  color: ${props => props.theme.primary.light};
   text-align: center;
   background: #00796b;
   box-shadow: 3px 3px 3px ${props => props.theme.primary.dark},
     -3px -3px 8px ${props => props.theme.primary.light};
   transition: 0.5s;
   &:hover {
-    background: #004d40
-;
+    background: #004d40;
   }
   &:active {
     background: #000;
