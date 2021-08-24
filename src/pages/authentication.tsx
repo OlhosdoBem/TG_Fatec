@@ -9,7 +9,6 @@ import {
   Logo,
   Password,
   SigninButton,
-  SubTitle,
   Title,
   Username,
   ViewLoginFrame
@@ -19,7 +18,7 @@ interface AuthenticationProps {
   children?: ReactNode
 }
 
-const Authentication: FC<AuthenticationProps> = ({ ...props }) => {
+const Authentication: FC<AuthenticationProps> = () => {
   const [user, setUser] = useState("")
   const [password, setPassword] = useState("")
 

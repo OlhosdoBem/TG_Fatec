@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-use-before-define
-import React, { FC, ReactNode, useState } from "react"
+import React, { FC, ReactNode } from "react"
 import {
   LogoName,
   SideBar as Side,
   SideHeader
 } from "../../styles/pages/SideBar"
-import { MenuIcon, GraphIcon, SearchIcon } from "../../styles/icons"
+import { MenuIcon } from "../../styles/icons"
 import EpicLogoMenu from "../../assets/epic-logo-menu.svg"
 
 interface SideBarProps {
@@ -19,7 +19,7 @@ const SideBar: FC<SideBarProps> = ({ ...props }): JSX.Element => {
       <SideHeader>
         <EpicLogoMenu />
         <LogoName>Quest Helper</LogoName>
-        <MenuIcon size={1}/>
+        <MenuIcon size={1} />
       </SideHeader>
     </Side>
   )
