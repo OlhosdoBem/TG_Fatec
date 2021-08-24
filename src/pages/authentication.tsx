@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
-import React, { FC, ReactNode, useState } from "react"
-import { LockIcon, MailIcon } from "../styles/icons"
-import Link from "next/link"
+import React, { FC, ReactNode, useState } from 'react'
+import { LockIcon, MailIcon } from '../styles/icons'
+import Link from 'next/link'
 import {
   Fields,
   ForgotLink,
@@ -13,15 +13,15 @@ import {
   Title,
   Username,
   ViewLoginFrame
-} from "../styles/pages/Authentication"
+} from '../styles/pages/Authentication'
 
 interface AuthenticationProps {
   children?: ReactNode
 }
 
 const Authentication: FC<AuthenticationProps> = ({ ...props }) => {
-  const [user, setUser] = useState("")
-  const [password, setPassword] = useState("")
+  const [user, setUser] = useState('')
+  const [password, setPassword] = useState('')
 
   const setUserContent = e => {
     setUser(e.target.value)
@@ -34,15 +34,15 @@ const Authentication: FC<AuthenticationProps> = ({ ...props }) => {
   return (
     <ViewLoginFrame>
       <LoginFrame>
-        <a target="_blank" href="http://olhosdobem.ong.br/">
+        <a target="_blank" href="http://olhosdobem.ong.br/" rel="noreferrer">
           <Logo />
         </a>
 
         <Title>Olhos do Bem</Title>
         {/* <SubTitle><a href="#">Faça seu cadastro AQUI</a></SubTitle> */}
-        <ForgotLink>FAÇA SEU CADASTRO <Link href="#">AQUI</Link></ForgotLink>
-
-
+        <ForgotLink>
+          FAÇA SEU CADASTRO <Link href="#">AQUI</Link>
+        </ForgotLink>
         <Fields>
           <Username>
             <MailIcon size={2} />
