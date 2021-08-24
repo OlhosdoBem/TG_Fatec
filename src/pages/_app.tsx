@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-use-before-define
 import React from "react"
 import { AppProps } from "next/app"
 import GlobalStyle from "../styles/global"
