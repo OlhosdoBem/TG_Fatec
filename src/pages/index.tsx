@@ -10,7 +10,15 @@ const Home: React.FC = () => {
   return (
     <>
       <SideBar opened={openMenu} />
-      <button style={{ position: "absolute", width: '300px', height: '100px', left: '50%'}} onClick={teste}>
+      <button
+        style={{
+          position: "absolute",
+          width: "300px",
+          height: "100px",
+          left: "50%"
+        }}
+        onClick={teste}
+      >
         asd
       </button>
     </>
