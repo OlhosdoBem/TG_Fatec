@@ -40,7 +40,7 @@ const Authentication: FC<AuthenticationProps> = () => {
         <Title>Olhos do Bem</Title>
         {/* <SubTitle><a href="#">Faça seu cadastro AQUI</a></SubTitle> */}
         <ForgotLink>
-           <Link href="/registration">FAÇA SEU CADASTRO AQUI</Link>
+          <Link href="/registration">FAÇA SEU CADASTRO AQUI</Link>
         </ForgotLink>
         <Fields>
           <Username>
