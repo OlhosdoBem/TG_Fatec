@@ -25,7 +25,7 @@ const Registration: FC<RegistrationProps> = () => {
       root: {
         "& > *": {
           margin: theme.spacing(1),
-          width: "25ch"
+          width: "25vw"
         }
       }
     })

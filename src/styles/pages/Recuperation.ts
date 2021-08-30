@@ -46,7 +46,6 @@ export const SubTitle = styled.div`
   text-align: right;
   font-size: 15px;
   padding-top: 7px;
-  
 `
 
 export const Fields = styled.div`
