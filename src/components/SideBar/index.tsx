@@ -17,8 +17,6 @@ const SideBar: FC<SideBarProps> = ({ ...props }): JSX.Element => {
   return (
     <Side className={props.opened ? "open" : ""}>
       <SideHeader>
-        <EpicLogoMenu />
-        <LogoName>Quest Helper</LogoName>
         <MenuIcon size={1} />
       </SideHeader>
     </Side>

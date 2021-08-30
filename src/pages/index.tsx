@@ -19,7 +19,7 @@ const Home: React.FC = () => {
         }}
         onClick={teste}
       >
-        asd
+        Olhos do Bem
       </button>
     </>
   )
