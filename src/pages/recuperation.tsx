@@ -13,7 +13,7 @@ import {
   ViewLoginFrame,
   Close,
   ForgotLink
-} from "../styles/pages/recuperation"
+} from "../styles/pages/Recuperation"
 
 interface RegistrationProps {
   children?: ReactNode
