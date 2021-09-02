@@ -13,7 +13,7 @@ export const ViewLoginFrame = styled.div`
 
 export const LoginFrame = styled.div`
   width: 625px;
-  height: 625px;
+  height: 650px;
   padding: 40px 35px 35px 35px;
   border-radius: 40px;
   background: ${props => props.theme.primary.main};
@@ -70,6 +70,8 @@ export const Fields2 = styled.div`
   width: 100%;
   padding: 0px 5px 0px 5px;
   & input {
+    margin: 0px 19px 0px 0px;
+    width: 523px;
     border: none;
     outline: none;
     background: none;

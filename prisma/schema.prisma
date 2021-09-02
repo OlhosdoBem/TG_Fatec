@@ -7,7 +7,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model post {
+  id         Int      @id @default(autoincrement())
+  title      String   @db.VarChar(200)
+  post       String?  @db.VarChar(500)
+  created_at DateTime @default(now())
+  updated_at DateTime
+  user_id    Int
+  user       user     @relation(fields: [user_id], references: [id])
+}
+
+model tipo_telefone {
+  id   Int    @id @default(autoincrement())
+  nome String @db.VarChar(100)
+}
+
 model tipo_usuario {
   id   BigInt @id @default(autoincrement())
   nome String @db.VarChar(100)
+}
+
+model user {
+  id       Int    @id @default(autoincrement())
+  username String @unique @db.VarChar(255)
+  post     post[]
 }

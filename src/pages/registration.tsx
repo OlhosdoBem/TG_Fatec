@@ -38,7 +38,7 @@ const Registration: FC<RegistrationProps> = () => {
         <ViewLoginFrame>
           <LoginFrame>
             <Close>
-              <a href="/authentication">
+              <a href="/registrationOptions">
                 <CloseIcon color="action" />
               </a>
             </Close>
